@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+.container{
+    width: 100%;
+    height: 100%;
+}
+.container .wrapper-1{
+    width: 25%;
+    height: 100%;
+    float: left;
+    background-color: #333333;
+}
+.container .wrapper-2{
+    width: 75%;
+    height: 100%;
+    float: left;
+    padding: 30px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-y: scroll;
+}
+.container .wrapper-1 .subwrapper-1{
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.container .wrapper-1 .subwrapper-1 h6{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: rgb(230, 230, 230);
+}
+.container .wrapper-1 nav{
+    width: 100%;
+}
+.container .wrapper-1 nav ul{
+    width: 100%;
+}
+.container .wrapper-1 nav ul li{
+    list-style: none;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    border-bottom: solid 2px rgb(230, 230, 230);
+}
+.container .wrapper-1 nav ul li a:hover{
+    color: rgb(246, 145, 19);
+}
+.container .wrapper-1 nav ul li .update-product{
+    color: rgb(246, 145, 19);
+}
+.container .wrapper-1 nav ul li a{
+    text-decoration: none;
+    color: rgb(230, 230, 230);
+    font-size: 20px;
+    padding: 20px 30px;
+}
+.container .wrapper-2 h1{
+    font-size: 30px;
+    border-bottom: solid 2px gray;
+    padding: 0 0 30px 0;
+    color: rgb(110, 110, 110);
+}
+
+/* END */
+
+.container .wrapper-2 .subwrapper-1{
+    margin-top: 20px;
+}
+.container .wrapper-2 .subwrapper-1 form input{
+    width: 300px;
+    padding: 10px;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 20px;
+}
+.container .wrapper-2 .subwrapper-1 form button{
+    padding: 10px;
+    background-color: rgb(246, 145, 19);
+    cursor: pointer;
+}
+.container .wrapper-2 .subwrapper-2{
+    margin-top: 20px;
+    border: solid 1px black;
+    padding: 20px;
+}
+.container .wrapper-2 .subwrapper-2 form input{
+    width: 300px;
+    padding: 10px;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 20px;
+}
+.container .wrapper-2 .subwrapper-2 form button{
+    padding: 10px;
+    background-color: rgb(246, 145, 19);
+    cursor: pointer;
+}
+.container .wrapper-2 .subwrapper-2 h3{
+    margin-bottom: 20px;
+}

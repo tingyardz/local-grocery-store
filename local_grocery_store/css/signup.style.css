@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    background-color: rgb(233, 235, 238);
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    width: 100%;
+    background-color: #333;
+    position: sticky;
+    top: 0;
+}
+nav ul{
+    width: 100%;
+}
+nav ul li{
+    width: 100%;
+}
+nav ul li a{
+    padding: 0;
+}
+nav ul li a button{
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+} 
+nav ul li a button:hover{
+    color: rgb(246, 145, 19);
+}
+.container{
+    width: 100%;
+    padding: 20px 0 50px 0;
+}
+.container .wrapper{
+    margin: auto;
+    width: 400px;
+    background-color: white;
+    box-shadow: 1px 1px 10px gray;
+    padding: 20px;
+}
+.container .wrapper h2{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(110, 110, 110);
+    font-size: 30px;
+    border-bottom: solid 2px gray;
+    padding-bottom: 10px;
+}
+.container .wrapper form input{
+    width: 100%;
+    display: block;
+    padding: 15px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    border: solid 1px rgb(200, 200, 200);
+    border-radius: 5px;
+}
+.container .wrapper form button{
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    background-color: rgb(150, 150, 150);
+    color: white;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+.container .wrapper form button:hover{
+    background-color: rgba(150, 150, 150, 0.7);
+}
+
+@media only screen and (max-width: 480px){
+
+    nav ul li a button{
+        padding: 10px;
+        font-size: 20px;
+        border: none;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+    } 
+    .container .wrapper{
+        margin: auto;
+        width: 300px;
+        background-color: white;
+        box-shadow: 1px 1px 10px gray;
+        padding: 20px;
+    }
+    .container .wrapper h2{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+        color: rgb(110, 110, 110);
+        font-size: 20px;
+        border-bottom: solid 2px gray;
+        padding-bottom: 10px;
+    }
+    .container .wrapper form input{
+        width: 100%;
+        display: block;
+        padding: 10px;
+        font-size: 14px;
+        margin-bottom: 20px;
+        border: solid 1px rgb(200, 200, 200);
+        border-radius: 5px;
+    }
+    .container .wrapper form button{
+        width: 100%;
+        padding: 10px;
+        font-size: 18px;
+        background-color: rgb(150, 150, 150);
+        color: white;
+        letter-spacing: 2px;
+        border-radius: 5px;
+        cursor: pointer;
+        border: none;
+    }
+}
+

@@ -1,0 +1,460 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(233, 235, 238);
+    padding-bottom: 50px;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.for-mobile-screens{
+    display: none;
+}
+nav.for-computer-screens{
+    width: 100%;
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+nav.for-computer-screens ul{
+    width: 100%;
+    text-align: right;
+}
+nav.for-computer-screens ul li{
+    display: inline-block;
+    padding: 10px 0;
+}
+nav.for-computer-screens ul li a.cart-counter{
+    color: rgb(246, 145, 19);
+}
+nav.for-computer-screens ul li a{
+    font-size: 18px;
+    color: white;
+    padding: 15px 30px;
+}
+nav.for-computer-screens ul li a:hover{
+    color: rgb(246, 145, 19);
+}
+nav.for-computer-screens ul .searching{
+    padding: 0;
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+}
+nav.for-computer-screens ul li .wrapper form input{
+    padding: 5px 15px;
+    font-size: 14px;
+    border: solid 1px;
+    color: rgb(110, 110, 110);
+    width: 300px;
+    border-radius: 15px;
+}
+nav.for-computer-screens ul li .wrapper form button{
+    padding: 5px 15px;
+    font-size: 16px;
+    background-color: rgb(170, 170, 170);
+    border: solid 1px rgb(110, 110, 110);
+    cursor: pointer;
+    border-radius: 5px;
+}
+nav.for-computer-screens ul li .wrapper form button:hover{
+    background-color: rgba(170, 170, 170, 0.5);
+}
+.cart-counter p{
+    display: inline-block;
+    background-color: white;
+    color: black;
+    padding: 10px 10px;
+    border-radius: 20px;
+}
+.container{
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    margin-top: 25px;
+    padding: 20px;
+}
+.container h6{
+    width: 100%;
+    border-bottom: solid 2px rgb(170, 170, 170);
+    padding: 0 0 10px 0;
+    font-size: 22px;
+    color: rgb(110, 110, 110);
+}
+.container section{
+    margin-top: 10px;
+}
+.container section table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.container section table th{
+    padding: 10px 10px 15px 10px;
+    color: rgb(110, 110, 110);
+}
+.container section table td{
+    padding: 10px;
+    text-align: center;
+    border-bottom: solid gray 1px;
+}
+.container section table .product-image{
+    background-image: radial-gradient(circle,white,skyblue);
+    width: 150px;
+}
+.container section table .product-image img{
+    width: 150px;
+    height: 150px;
+}
+.container section table td .remove{
+    color: red;
+}
+.container section table td input{
+    padding: 5px 15px;
+    width: 70px;
+    text-align: center;
+    border: none;
+}
+.container section table td button{
+    padding: 5px 15px;
+    border: none;
+    background-color: rgb(170, 170, 170);
+    cursor: pointer;
+}
+.container section table td button:hover{
+    background-color: rgba(170, 170, 170,0.7);
+}
+.container .empty-cart-alert{
+    width: 100%;
+}
+.container .empty-cart-alert h3{
+    width: 100%;
+    color: rgb(170, 170, 170);
+    text-align: center;
+    padding: 25px;
+}
+.container .checkout{
+    width: 100%;
+    margin-top: 15px;
+}
+.container .checkout button{
+    padding: 12px 18px;
+    background-color: orangered;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+.container1{
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    margin-top: 25px;
+    padding: 20px;
+}
+.container1 h6{
+    width: 100%;
+    border-bottom: solid 2px rgb(170, 170, 170);
+    padding: 0 0 10px 0;
+    font-size: 22px;
+    color: rgb(110, 110, 110);
+}
+.container1 section{
+    margin-top: 10px;
+}
+.container1 section table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.container1 section table th{
+    padding: 10px 10px 15px 10px;
+    color: rgb(110, 110, 110);
+}
+.container1 section table td{
+    padding: 10px;
+    text-align: center;
+    border-bottom: solid gray 1px;
+}
+.container1 section table .product-image1{
+    background-image: radial-gradient(circle,white,skyblue);
+    width: 150px;
+}
+.container1 section table .product-image1 img{
+    width: 150px;
+    height: 150px;
+}
+.container1 section table td input{
+    padding: 5px 15px;
+    width: 70px;
+    text-align: center;
+    border: none;
+}
+.container1 section table td button{
+    padding: 5px 15px;
+    border: none;
+    background-color: rgb(170, 170, 170);
+    cursor: pointer;
+}
+.container1 section table td button:hover{
+    background-color: rgba(170, 170, 170,0.7);
+}
+.container1 .empty-cart-alert1{
+    width: 100%;
+}
+.container1 .empty-cart-alert1 h3{
+    width: 100%;
+    color: rgb(170, 170, 170);
+    text-align: center;
+    padding: 25px;
+}
+.container1 .noOfItems{
+    width: 100%;
+    margin-top: 15px;
+}
+.container1 .noOfItems h4{
+    padding: 10px;
+    border-bottom: solid 1px gray;
+}
+
+
+.place-order{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+.place-order .wrapper{
+    background-color: white;
+    padding: 20px;
+}
+.place-order .wrapper form input{
+    display: block;
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+.place-order .wrapper form textarea{
+    display: block;
+    width: 300px;
+    height: 150px;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 12px;
+    resize: none;
+}
+.place-order .wrapper form button{
+    width: 100px;
+    height: 35px;
+    background-color: orangered;
+    color: white;
+    cursor: pointer;
+}
+#time,#date,#user-cart-table,#user-fullname{
+    display: none;
+}
+
+@media only screen and (max-width: 480px){
+
+    .for-computer-screens{
+        display: none;
+    }
+    .for-mobile-screens{
+        display: block;
+        width: 100%;
+        background-color: #333;
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+        z-index: 1000;
+    }
+    .for-mobile-screens ul{
+        width: 100%;
+        text-align: right;
+    }
+    .for-mobile-screens ul li{
+        display: inline-block;
+        padding: 5px 10px;
+    }
+    .for-mobile-screens ul li a{
+        color: white;
+        font-size: 18px;
+    }
+    .for-mobile-screens ul li a:hover{
+        color: rgb(246, 145, 19);
+    }
+    .for-mobile-screens ul li a.cart-counter{
+        color: rgb(246, 145, 19);
+    }
+    .cart-counter p{
+        display: inline-block;
+        background-color: white;
+        color: black;
+        padding: 5px;
+        border-radius: 20px;
+        font-size: 18px;
+    }
+    .pop-up-search-bar{
+        display: none;
+        width: 100%;
+        background-color: #333;
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+        z-index: 1000;
+    }
+    .container{
+        background-color: white;
+        width: 90%;
+        margin: auto;
+        margin-top: 25px;
+        padding: 20px;
+    }
+    .container h6{
+        width: 100%;
+        border-bottom: solid 2px rgb(170, 170, 170);
+        padding: 0 0 10px 0;
+        font-size: 20px;
+        color: rgb(110, 110, 110);
+    }
+    .container section table .product-image img{
+        width: 50px;
+        height: 50px;
+    }
+    .container section table th{
+        padding: 10px 10px 15px 10px;
+        color: rgb(110, 110, 110);
+        font-size: 14px;
+    }
+    .container section table td{
+        padding: 10px;
+        text-align: center;
+        border-bottom: solid gray 1px;
+        font-size: 14px;
+    }
+    .container section table td h3{
+        font-size: 14px;
+    }
+    .container section{
+        margin-top: 10px;
+        overflow-x: auto;
+    }
+    .container section table td button{
+        padding: 5px 10px;
+        border: none;
+        background-color: rgb(170, 170, 170);
+        cursor: pointer;
+    }
+    .container .checkout h4{
+        font-size: 16px;
+    }
+    .container .checkout h4 p{
+        font-size: 16px;
+    }
+    .container .checkout button{
+        padding: 10px;
+        background-color: orangered;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    .container1{
+        background-color: white;
+        width: 90%;
+        margin: auto;
+        margin-top: 25px;
+        padding: 20px;
+    }
+    .container1 h6{
+        width: 100%;
+        border-bottom: solid 2px rgb(170, 170, 170);
+        padding: 0 0 10px 0;
+        font-size: 20px;
+        color: rgb(110, 110, 110);
+    }
+    .place-order .wrapper{
+        background-color: white;
+        padding: 20px;
+        width: 300px;
+    }
+    .place-order .wrapper form input{
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        font-size: 12px;
+    }
+    .place-order .wrapper form textarea{
+        display: block;
+        width: 100%;
+        height: 150px;
+        padding: 10px;
+        margin-bottom: 15px;
+        font-size: 12px;
+        resize: none;
+    }
+    .place-order .wrapper form button{
+        width: 100px;
+        height: 35px;
+        background-color: orangered;
+        color: white;
+        cursor: pointer;
+    }
+    .container1 section{
+        margin-top: 10px;
+        overflow-x: auto;
+    }
+    .container .empty-cart-alert h3{
+        width: 100%;
+        color: rgb(170, 170, 170);
+        text-align: center;
+        padding: 25px;
+        font-size: 16px;
+    }
+    .container1 section table .product-image1 img{
+        width: 50px;
+        height: 50px;
+    }
+    .container1 section table th{
+        padding: 10px 10px 15px 10px;
+        color: rgb(110, 110, 110);
+        font-size: 14px;
+    }
+    .container1 section table td{
+        padding: 10px;
+        text-align: center;
+        border-bottom: solid gray 1px;
+        font-size: 14px;
+    }
+    .container1 section table td h3{
+        font-size: 14px;
+    }
+    .container1 .noOfItems h4{
+        font-size: 16px;
+    }
+    .container1 .noOfItems h4 p{
+        font-size: 16px;
+    }
+    .container1 .empty-cart-alert1 h3{
+        width: 100%;
+        color: rgb(170, 170, 170);
+        text-align: center;
+        padding: 25px;
+        font-size: 16px;
+    }
+
+
+}
